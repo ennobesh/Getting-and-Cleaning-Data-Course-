@@ -1,0 +1,20 @@
+#1.Merges the training and the test sets to create one data set.
+
+Downloaded files are merge into the variable names: X_train, y_train, subject_train, X_test, y_test, and subject_test.
+
+features reads the names from the dataset whereby the column names are stored in.
+activity_labels reads the downloded activity_labels.txt
+
+mrg_train combines y_train, subject_train and X_train
+mrg_test combines y_test, subject_test and X_test
+combine_data merges both mrg_train and mrg_test
+
+colNames reads the combine_data
+
+mean_and_std returns a logical vector indicating which element of a character vector contains the match in colNames
+
+set_mean_std for making subset
+
+activity_names merges the set_mean_std and activity_labels 
+
+tidy_set2 is for the second tidy dataset
